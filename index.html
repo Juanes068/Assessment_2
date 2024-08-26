@@ -34,6 +34,8 @@ Instructor: Washington Valencia
 	<link rel="shortcut icon" type="image/x-icon"
 		href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
 
+        <script src="assets/js/script.js" defer></script>
+        <script src="assets/js/script2.js" defer></script>
 
 </head>
 
@@ -149,8 +151,7 @@ Instructor: Washington Valencia
 
 									<a class="nav-link" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false" id="mainNavHosting">
-										<h3>Quiz #2 - IST 107 - <span class="text-danger">{{Replace with your Full
-												Name}}</span>
+										<h3>Quiz #2 - IST 107 - <span id="fullname" class="text-danger">Juan E Triana</span>
 										</h3>
 									</a>
 
@@ -172,7 +173,7 @@ Instructor: Washington Valencia
 						<ul class="list-inline list-unstyled mb-0 d-flex align-items-end">
 
 							<li class="list-inline-item float-start">
-								<a href="#" class="btn btn-sm btn-primary btn-pill transition-hover-start m-0">
+								<a onclick = "Rname()"  href="#" class="btn btn-sm btn-primary btn-pill transition-hover-start m-0">
 
 									<i class="fi fi-users m-0-xs"></i>
 
@@ -221,8 +222,8 @@ Instructor: Washington Valencia
 							</p><br><br>
 
 							<div class="mt-15 text-muted">
-								<h2>{{Replace with current date}} </h2>
-								<h2>{{Replace with your email}} </h2>
+								<h2 id="DATE1">{{Replace with current date}} </h2>
+								<h2 id="EMAIL1">{{Replace with your email}} </h2>
 							</div>
 
 						</div>
@@ -259,7 +260,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-primary fw-bold">HTTP</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / Layer 7</p>
+					<p class="m-0" id="HTTP">xx port / Layer 7</p>
 
 				</div>
 
@@ -269,7 +270,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-danger fw-bold">HTTPS</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / Layer 7</p>
+					<p class="m-0" id="HTTPS">xx port / Layer 7</p>
 
 				</div>
 
@@ -279,7 +280,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-warning fw-bold">SSH</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / layer 7</p>
+					<p class="m-0"id="SSH">xx port / layer 7</p>
 
 				</div>
 
@@ -289,7 +290,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-success fw-bold">DNS</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / layer 7</p>
+					<p class="m-0" id="DNS" >xx port / layer 7</p>
 
 				</div>
 
@@ -429,7 +430,7 @@ Instructor: Washington Valencia
 					</div>
 
 
-					<div class="col-12 col-lg-6 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"
+					<div id="itemList" class="col-12 col-lg-6 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"
 						data-aos-offset="0">
 
 						<h2 class="fw-bold mb-5">
@@ -508,7 +509,7 @@ Instructor: Washington Valencia
 						</div>
 
 						<div class="text-align-end">
-							<a href="#" class="btn btn-primary btn-soft">How many items would you like in
+							<a  onclick="Nitems()" href="#" class="btn btn-primary btn-soft">How many items would you like in
 								the list?</a>
 						</div>
 
